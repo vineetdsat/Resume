@@ -1,6 +1,77 @@
-div {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 30px;
-    margin-right: 50px;
+@charset "UTF-8";
+body {
+  margin-left: 20px;
+ 
+}
+
+.timeline {
+  width: 100%;
+  max-width: 1050px;
+  background: #fff;
+  position: relative;
+  margin-top: 0px;
+  
+}
+.timeline:before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: calc(25% + 15px);
+  bottom: 0px;
+  width: 4px;
+  background: #ddd;
+}
+.timeline:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.entry {
+  clear: both;
+  text-align: left;
+  position: relative;
+}
+.entry .title {
+  margin-bottom: 0.5em;
+  margin-top: 10px;
+  float: left;
+  width: 33%;
+  padding-right: 10px;
+  text-align: left;
+  position: relative;
+}
+
+
+.entry .title h3 {
+  margin: 0;
+  font-size: 125%;
+}
+.entry .title p {
+  margin: 0;
+  font-size: 100%;
+}
+.entry .body {
+  margin: 0;
+  float: right;
+  width: 66%;
+  font-size: 120%;
+  font-;
+  padding-left: 30px;
+}
+.entry .body p {
+  line-height: 0.8em;
+}
+.entry .body p:first-child {
+  margin: 0;
+  font-weight: 400;
+}
+.entry .body ul {
+  color: rgb(0, 0, 0);
+  padding-left: 10;
+  list-style-type: none;
+}
+.entry .body ul li:before {
+  content: "–";
+  margin-right: 0.5em;
 }
